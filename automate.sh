@@ -1,8 +1,6 @@
 #!/bin/sh
-kubectl create -f ./secrets.yml
-kubectl create -f ./mysql-compose.yml
-kubectl create -f ./mysql-service.yml
-kubectl create -f ./nodejs-mysql-deployment.yml
-kubectl create -f ./nodejs-service.yml
-kubectl get services
-minikube service spring-service --url
+oc create -f ./secrets.yml
+oc create -f ./mysql-compose.yml
+oc create -f ./mysql-service.yml
+oc create -f ./nodejs-mysql-deployment.yml
+oc create -f ./nodejs-service.yml
